@@ -1,3 +1,17 @@
+/* スマートフォン用のスタイル */
+@media (max-width: 767px) {
+    header img {
+        width: 100%; /* 画像を幅いっぱいに表示 */
+        height: auto; /* 高さを自動調整 */
+    }
+    
+    body {
+        background-size: cover; /* 背景画像をビューポートに合わせて調整 */
+    }
+}
+
+
+
 /* ページ全体のスタイル */
 body {
     font-family: Arial, sans-serif;
@@ -192,18 +206,29 @@ form {
     }
 
     /*ページトップ*/
-    #back-to-top {
-        position: fixed; /* ボタンを固定位置に配置 */
-        bottom: 20px; /* 下部からの距離を調整（必要に応じて変更） */
-        right: 20px; /* 右端からの距離を調整（必要に応じて変更） */
-        background: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
+    a.btn--circle {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        background: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: flex; /* ボタン内の要素を中央に配置 */
+        justify-content: center; /* ボタン内の要素を水平方向に中央に配置 */
+        align-items: center; /* ボタン内の要素を垂直方向に中央に配置 */
+      }
+      
     
-    #back-to-top:hover {
-        background: #0056b3;
-    }
-    
+      a.btn--circle i {
+        font-size: 24px; /* アイコンのサイズを調整（必要に応じて変更） */
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        letter-spacing: 0;
+      }
+      
+      
