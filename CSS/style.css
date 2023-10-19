@@ -5,9 +5,30 @@ body {
     padding: 0;
 }
 
+.content h2 {
+    padding: 1rem 2rem;
+  border-left: 6px double #000;
+  background: #f4f4f4;
+}
+
+/*セクション*/
+section {
+    border: 1px solid #000; /* 枠線のスタイルを設定 */
+    background-color: #fff; /* 背景色を白に設定 */
+    padding: 20px; /* セクションの内部の余白を設定 */
+    margin: 10px 0; /* セクション間の余白を設定 */
+}
+
 /* ヘッダースタイル */
+
+header img {
+    width: auto; /* 画像の幅を指定 */
+    height: auto; /* 高さを自動調整 */
+    margin-top: 10px; /* 上部の余白を設定 */
+}
+
 header {
-    background-color: #ffd700;
+    background-color: #0000008d;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -17,6 +38,12 @@ header h1 {
     margin: 0;
     font-size: 36px;
 }
+
+.header-image {
+    width: 100%; /* 画像の幅をヘッダーの幅に合わせる */
+    height: auto; /* 高さを自動調整 */
+}
+
 
 nav ul {
     list-style-type: none;
@@ -57,7 +84,8 @@ form {
 
 
 .confirm_help{
-    padding-top:60px;
+    padding-top:25px;
+    padding-bottom:60px;  /* Add this line */
 }
 .help_font{
     color:#ffffff;
@@ -107,17 +135,17 @@ form {
     height: 301px;
     top: 3685px;
     width:100%;
-    padding-top: 39x;
-    padding-bottom: 39px;
+    padding-top: 39px;   /* Correct the typo here */
+    padding-bottom: 39px;   /* Add this line */
     font-family: Roboto;
     font-style: normal;
     color: #135161;
-    display: inline-block;
 }
 
 .helpbox{
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
+
 
 .cal_wrapper {
     max-width: 960px;
@@ -162,3 +190,20 @@ form {
     .calendar-button:hover {
         background-color: #45a049; /* Darker green */
     }
+
+    /*ページトップ*/
+    #back-to-top {
+        position: fixed; /* ボタンを固定位置に配置 */
+        bottom: 20px; /* 下部からの距離を調整（必要に応じて変更） */
+        right: 20px; /* 右端からの距離を調整（必要に応じて変更） */
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    #back-to-top:hover {
+        background: #0056b3;
+    }
+    
