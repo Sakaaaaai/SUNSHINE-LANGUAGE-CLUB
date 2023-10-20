@@ -1,17 +1,3 @@
-/* スマートフォン用のスタイル */
-@media (max-width: 767px) {
-    header img {
-        width: 100%; /* 画像を幅いっぱいに表示 */
-        height: auto; /* 高さを自動調整 */
-    }
-    
-    body {
-        background-size: cover; /* 背景画像をビューポートに合わせて調整 */
-    }
-}
-
-
-
 /* ページ全体のスタイル */
 body {
     font-family: Arial, sans-serif;
@@ -34,7 +20,6 @@ section {
 }
 
 /* ヘッダースタイル */
-
 header img {
     width: auto; /* 画像の幅を指定 */
     height: auto; /* 高さを自動調整 */
@@ -83,6 +68,127 @@ section h2 {
     font-size: 24px;
 }
 
+/*コース*/
+
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.btn-wrap-pc-sp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  /*テスト表示用*/
+  max-width: 435px;
+  margin: 0 auto 20px;
+
+  -webkit-box-pack: justify;
+
+  -ms-flex-pack: justify;
+
+  justify-content: space-between;
+}
+
+a.btn-pc-sp {
+  line-height: 1.4;
+
+  width: 49.5%;
+  padding: 1.25rem 0;
+
+  color: #ffff;
+}
+
+a.btn-pc-sp--contact {
+  color: #fff;
+  background: #eb6100;
+}
+
+a.btn-pc-sp--tel {
+  color: #fff;
+  background: #094;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+a.btn-pc-sp {
+  width: 49.5%;
+  padding-right: 1.5rem;
+
+  color: #ffff;
+}
+
+a.btn-pc-sp--contact {
+  color: #fff;
+}
+
+a.btn-pc-sp--contact.btn-pc-sp--2 {
+  border-bottom: 5px solid #d25600;
+  background: #eb6100;
+}
+
+a.btn-pc-sp--tel.btn-pc-sp--2 {
+  border-bottom: 5px solid #008039;
+  background: #094;
+}
+
+a.btn-pc-sp .number {
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+}
+
+.btn-large {
+  padding: 20px 40px; /* ボタンの大きさを調整 */
+  margin: 10px; /* ボタン間の余白を追加 */
+}
+
+.button-text {
+  font-size: 1.5rem; /* ボタン内のテキストのサイズを大きく調整 */
+}
+
+
+
+
+
 /* フッタースタイル */
 form {
     width: 250px;
@@ -93,7 +199,7 @@ form {
     width: 100%;
     height: 349px;
     text-align: center;
-    background: #6AC5CE;
+    background: #ffd900;
 }
 
 
@@ -135,7 +241,7 @@ form {
     padding: 10px 100px;
     background: #FFFFFF;
 
-    color: #6AC5CE;
+    color: #ffd900;
 
 }
 
@@ -185,26 +291,6 @@ form {
     .googlecal { padding-bottom: 75%; }
     }
 
-    .calendar-button {
-        display: inline-block;
-        color: inherit;
-        text-decoration: none;
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-
-    .calendar-button:hover {
-        background-color: #45a049; /* Darker green */
-    }
-
     /*ページトップ*/
     a.btn--circle {
         width: 60px;
@@ -230,5 +316,26 @@ form {
         transition: all .3s;
         letter-spacing: 0;
       }
+      
+      /*スクロール写真*/
+      .carousel {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+      }
+      
+      .carousel img {
+        scroll-snap-align: center;
+        height: 300px;
+        margin: 10px;
+      }
+
+
+
+
+
+
+    
       
       
