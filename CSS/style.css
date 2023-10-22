@@ -69,6 +69,20 @@ section h2 {
 
 /*ボタン*/
 
+@media (max-width: 768px) {
+  .button-container a.btn_01::after,
+  .button-container a.btn_02::after,
+  .button-container a.btn_03::after {
+    content: '';
+    display: block;
+    height: 20px; /* スマートフォン用に別途調整 */
+  }
+
+  .button_2-text {
+    display: block;
+  }
+}
+
 .button-container a.btn_01,
 .button-container a.btn_02,
 .button-container a.btn_03 {
