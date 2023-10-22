@@ -1,14 +1,11 @@
 /* ページ全体のスタイル */
 body {
+  background-image: url('../images/phonto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.content h2 {
-    padding: 1rem 2rem;
-  border-left: 6px double #000;
-  background: #f4f4f4;
 }
 
 /*セクション*/
@@ -70,124 +67,134 @@ section h2 {
 
 /*コース*/
 
-@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+/*ボタン*/
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+.button_2-text {
+  margin-top: 10px; /* テキスト上部のマージンを追加 */
 }
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-.btn,
-a.btn,
-button.btn {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-}
-
-.btn-wrap-pc-sp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  /*テスト表示用*/
-  max-width: 435px;
-  margin: 0 auto 20px;
-
-  -webkit-box-pack: justify;
-
-  -ms-flex-pack: justify;
-
-  justify-content: space-between;
-}
-
-a.btn-pc-sp {
-  line-height: 1.4;
-
-  width: 49.5%;
-  padding: 1.25rem 0;
-
-  color: #ffff;
-}
-
-a.btn-pc-sp--contact {
-  color: #fff;
-  background: #eb6100;
-}
-
-a.btn-pc-sp--tel {
-  color: #fff;
-  background: #094;
-}
-
-.fa-position-right {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  right: 1rem;
-}
-
-a.btn-pc-sp {
-  width: 49.5%;
-  padding-right: 1.5rem;
-
-  color: #ffff;
-}
-
-a.btn-pc-sp--contact {
-  color: #fff;
-}
-
-a.btn-pc-sp--contact.btn-pc-sp--2 {
-  border-bottom: 5px solid #d25600;
-  background: #eb6100;
-}
-
-a.btn-pc-sp--tel.btn-pc-sp--2 {
-  border-bottom: 5px solid #008039;
-  background: #094;
-}
-
-a.btn-pc-sp .number {
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
-}
-
-.btn-large {
-  padding: 20px 40px; /* ボタンの大きさを調整 */
-  margin: 10px; /* ボタン間の余白を追加 */
-}
 
 .button-text {
-  font-size: 1.5rem; /* ボタン内のテキストのサイズを大きく調整 */
+  margin-top: auto;
+  padding: 0.5rem 0;
+  line-height: 0.5;
+}
+
+a.btn_01:last-child {
+  margin-right: 0;
+}
+
+a.btn_01:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+/*ボタン１*/
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a.btn_01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 450px;
+  height: 250px;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  background: linear-gradient(to top, rgb(5, 130, 174), #27acd9);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 20px solid transparent; /* 新しいスタイルを追加 */
+}
+
+a.btn_01 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid #27acd9; /* ボーダーのスタイルと色を指定 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
+  border-radius: 10px; /* 角丸にする */
+  transition: transform 0.2s; /* ホバー時のアニメーション */
+}
+
+a.btn_01 img:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+/*ボタン2*/
+a.btn_02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 450px;
+  height: 250px;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  background: linear-gradient(to top, rgb(8, 174, 5), #6ed927);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 20px solid transparent; /* 新しいスタイルを追加 */
+}
+
+a.btn_02 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid #27d94e; /* ボーダーのスタイルと色を指定 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
+  border-radius: 10px; /* 角丸にする */
+  transition: transform 0.2s; /* ホバー時のアニメーション */
+}
+
+a.btn_02 img:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
 }
 
 
+/*ボタン3*/
+a.btn_03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 450px;
+  height: 250px;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  background: linear-gradient(to top, rgb(174, 5, 5), #d96827);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 20px solid transparent; /* 新しいスタイルを追加 */
+}
 
+a.btn_03 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid #d96e27; /* ボーダーのスタイルと色を指定 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
+  border-radius: 10px; /* 角丸にする */
+  transition: transform 0.2s; /* ホバー時のアニメーション */
+}
 
+a.btn_03 img:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
 
 /* フッタースタイル */
 form {
@@ -199,7 +206,7 @@ form {
     width: 100%;
     height: 349px;
     text-align: center;
-    background: #ffd900;
+    background: #d7c114;
 }
 
 
@@ -241,7 +248,7 @@ form {
     padding: 10px 100px;
     background: #FFFFFF;
 
-    color: #ffd900;
+    color: #d7c114;
 
 }
 
