@@ -1,6 +1,6 @@
 /* ページ全体のスタイル */
 body {
-  background-image: url('../images/phonto.jpg');
+  background-image: url('../images/background.JPG');
   background-repeat: no-repeat;
   background-size: cover;
     font-family: Arial, sans-serif;
@@ -12,8 +12,24 @@ body {
 section {
     border: 1px solid #000; /* 枠線のスタイルを設定 */
     background-color: #fff; /* 背景色を白に設定 */
-    padding: 20px; /* セクションの内部の余白を設定 */
+    padding: 40px; /* セクションの内部の余白を設定 */
     margin: 10px 0; /* セクション間の余白を設定 */
+}
+
+.narrow-section {
+  max-width: 800px; /* 好みに応じて幅を調整 */
+  margin: 0 auto; /* セクションを中央に配置 */
+  border-radius: 10px; /* 任意の角丸めの半径を指定 */
+  padding: 20px; /* セクションの内部の余白を設定 */
+  padding-top: 7px; /* 任意の上部パディングの高さを指定 */
+  margin-top: 20px; /* 任意の上部マージンの高さを指定 */
+  margin-bottom: 30px; /* 余白の高さを調整 */
+}
+
+.narrow-section h2 {
+  position: relative;
+  padding: 1rem 2rem;
+  border-bottom: 6px solid #d7c114;
 }
 
 /* ヘッダースタイル */
@@ -58,7 +74,7 @@ nav a {
 
 /* セクションのスタイル */
 section {
-    padding: 70px;
+    padding: 30px;
 }
 
 section h2 {
@@ -66,14 +82,11 @@ section h2 {
 }
 
 /*コース*/
-
-/* スマホ表示時のスタイル */
-@media screen and (max-width: 768px) {
-  a.btn_01 img,
-  a.btn_02 img,
-  a.btn_03 img {
-    margin-bottom: 20px;
-  }
+/* 特定のセクション内の特定のh2にスタイルを適用 */
+.narrow-section .special-h2 {
+  padding: 1rem 2rem;
+  border-top: 6px double #000;
+  border-bottom: 6px double #000;
 }
 
 /*ボタン*/
@@ -104,7 +117,7 @@ section h2 {
 
 .button-text {
   margin-top: auto;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
   line-height: 0.5;
 }
 
@@ -147,6 +160,15 @@ a.btn_01 img {
 
 a.btn_01 img:hover {
   transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+a.btn_01:last-child {
+  margin-right: 0;
+}
+
+a.btn_01:hover {
+  color: #fff;
+  opacity: 0.5;
 }
 
 /*ボタン2*/
@@ -236,7 +258,37 @@ a.btn_03:hover {
   opacity: 0.5;
 }
 
+/*位置情報*/
+.map-and-boxes {
+  display: flex;
+}
+
+.map-container {
+  flex: 1; /* 地図コンテナが残りのスペースを占有 */
+  border: 1px solid #ccc; /* ボーダースタイルを設定 */
+}
+
+.box-container {
+  flex: 1; /* ボックスコンテナが残りのスペースを占有 */
+  display: flex;
+  flex-direction: column; /* ボックスを縦に配置 */
+}
+
+.box8 {
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #232323;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
+}
+
+
 /* フッタースタイル */
+
+#contact {
+  background-color: #0000008d; /* 任意の背景色を指定 */
+}
+
 form {
     width: 250px;
     border: solid 1px black;
