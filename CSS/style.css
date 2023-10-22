@@ -67,6 +67,15 @@ section h2 {
 
 /*コース*/
 
+/* スマホ表示時のスタイル */
+@media screen and (max-width: 768px) {
+  a.btn_01 img,
+  a.btn_02 img,
+  a.btn_03 img {
+    margin-bottom: 20px;
+  }
+}
+
 /*ボタン*/
 
 .button-container a.btn_01,
