@@ -80,15 +80,6 @@ section h2 {
   line-height: 0.5;
 }
 
-a.btn_01:last-child {
-  margin-right: 0;
-}
-
-a.btn_01:hover {
-  color: #fff;
-  opacity: 0.5;
-}
-
 /*ボタン１*/
 .button-container {
   display: flex;
@@ -129,6 +120,15 @@ a.btn_01 img:hover {
   transform: scale(1.05); /* ホバー時に少し拡大 */
 }
 
+a.btn_01:last-child {
+  margin-right: 0;
+}
+
+a.btn_01:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
 /*ボタン2*/
 a.btn_02 {
   display: flex;
@@ -160,6 +160,15 @@ a.btn_02 img {
 
 a.btn_02 img:hover {
   transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+a.btn_02:last-child {
+  margin-right: 0;
+}
+
+a.btn_02:hover {
+  color: #fff;
+  opacity: 0.5;
 }
 
 
@@ -194,6 +203,15 @@ a.btn_03 img {
 
 a.btn_03 img:hover {
   transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+a.btn_03:last-child {
+  margin-right: 0;
+}
+
+a.btn_03:hover {
+  color: #fff;
+  opacity: 0.5;
 }
 
 /* フッタースタイル */
