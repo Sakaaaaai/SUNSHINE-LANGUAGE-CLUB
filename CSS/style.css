@@ -69,20 +69,6 @@ section h2 {
 
 /*ボタン*/
 
-@media (max-width: 768px) {
-  .button-container a.btn_01::after,
-  .button-container a.btn_02::after,
-  .button-container a.btn_03::after {
-    content: '';
-    display: block;
-    height: 20px; /* スマートフォン用に別途調整 */
-  }
-
-  .button_2-text {
-    display: block;
-  }
-}
-
 .button-container a.btn_01,
 .button-container a.btn_02,
 .button-container a.btn_03 {
@@ -143,6 +129,7 @@ a.btn_01 img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
   border: 2px solid #27acd9; /* ボーダーのスタイルと色を指定 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
   border-radius: 10px; /* 角丸にする */
@@ -176,6 +163,7 @@ a.btn_02 img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
   border: 2px solid #27d94e; /* ボーダーのスタイルと色を指定 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
   border-radius: 10px; /* 角丸にする */
@@ -219,6 +207,7 @@ a.btn_03 img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
   border: 2px solid #d96e27; /* ボーダーのスタイルと色を指定 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影の追加 */
   border-radius: 10px; /* 角丸にする */
