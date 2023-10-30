@@ -219,8 +219,10 @@ tr:nth-child(even) {
 }
 
 .testimonial img {
-  width: 100px; /* 生徒の写真の幅 */
-  border-radius: 50%; /* 円形の写真 */
+  max-width: 100px; /* 最大の幅を指定 */
+  max-height: 100px; /* 最大の高さを指定 */
+  object-fit: cover; /* 写真を切り抜き、アスペクト比を維持 */
+  border-radius: 50%; /* 円形の写真を解除 */
   margin-right: 10px;
 }
 
