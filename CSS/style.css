@@ -81,6 +81,13 @@ nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+nav ul li img {
+  width: 30px; /* アイコンの幅を調整 */
+  height: 30px; /* アイコンの高さを調整 */
+  margin: 0 ; /* アイコン間の余白を調整 */
+}
+
+
 nav a {
     text-decoration: none;
     color: #fff;

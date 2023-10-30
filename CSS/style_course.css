@@ -47,6 +47,12 @@ nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+nav ul li img {
+  width: 30px; /* アイコンの幅を調整 */
+  height: 30px; /* アイコンの高さを調整 */
+  margin: 0 ; /* アイコン間の余白を調整 */
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
@@ -197,4 +203,105 @@ th {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+/* 生徒の声 */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  display: flex;
+}
+
+.testimonial img {
+  width: 100px; /* 生徒の写真の幅 */
+  border-radius: 50%; /* 円形の写真 */
+  margin-right: 10px;
+}
+
+/* フッタースタイル */
+
+#contact {
+  background-color: #0000008d; /* 任意の背景色を指定 */
+}
+
+form {
+    width: 250px;
+    border: solid 1px black;
+}
+
+.help_wrap{
+    width: 100%;
+    height: 349px;
+    text-align: center;
+    background: #d7c114;
+}
+
+
+.confirm_help{
+    padding-top:25px;
+    padding-bottom:60px;  /* Add this line */
+}
+.help_font{
+    color:#ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 21px;
+}
+
+.help_font h2{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+
+    color:#ffffff;
+}
+
+.help_font h3{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px; 
+
+    color:#ffffff;
+}
+
+.help{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 100px;
+    background: #FFFFFF;
+
+    color: #d7c114;
+
+}
+
+.help:hover{
+    background: #FF8989;
+    color: #ffffff;
+}
+
+.fotter{
+    position: absolute;
+    height: 301px;
+    top: 3685px;
+    width:100%;
+    padding-top: 39px;   /* Correct the typo here */
+    padding-bottom: 39px;   /* Add this line */
+    font-family: Roboto;
+    font-style: normal;
+    color: #135161;
+}
+
+.helpbox{
+    margin-bottom: 20px; 
 }
