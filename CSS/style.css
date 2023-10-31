@@ -82,8 +82,8 @@ nav ul li a:hover {
 }
 
 nav ul li img {
-  width: 30px; /* アイコンの幅を調整 */
-  height: 30px; /* アイコンの高さを調整 */
+  width: 40px; /* アイコンの幅を調整 */
+  height: 40px; /* アイコンの高さを調整 */
   margin: 0 ; /* アイコン間の余白を調整 */
 }
 
@@ -303,6 +303,7 @@ a.btn_03:hover {
 #QandA-1 dt {
 	background: #ffc06e; /* 「Q」タイトルの背景色 */
 	color: #fff; /* 「Q」タイトルの文字色 */
+  font-weight: bold;
 	padding: 8px;
 	border-radius: 2px;
 }
@@ -315,6 +316,7 @@ a.btn_03:hover {
 	margin: 24px 16px 40px 32px;
 	line-height: 140%;
 	text-indent: -24px;
+  font-weight: bold;
 }
 #QandA-1 dd:before {
 	content: "A.";
